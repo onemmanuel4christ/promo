@@ -11,3 +11,25 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.color-nav{
+  background-color: #002E25;
+}
+.logo{
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.shop-now{
+  padding: 10px 30px;
+  background-color: #FFF;
+  color: #002E25;
+  font-weight: 500;
+  font-size: 16px;
+  border-radius: 25px;
+  text-decoration: none;
+  text-align: center;
+}
+.nav-item {
+  color: #fff !important;
+}

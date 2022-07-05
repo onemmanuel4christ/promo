@@ -1,0 +1,23 @@
+.card-pic{
+    max-height: 160px;
+    width: 100%;
+    object-fit: cover;
+
+}
+
+.card__title{
+  font-weight: 900!important;
+  font-size: 1.5rem;
+  color: #002E25;
+
+}
+
+.card__body{
+    font-size: 0.8rem;
+}
+
+.card__btn{
+    background-color: #002E25!important;
+    /* outline: none!important; */
+    border: 0!important;
+}

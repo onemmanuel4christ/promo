@@ -1,9 +1,31 @@
+import Home from './pages/Home';
+import About from './pages/About';
+import Photos from './pages/Photos';
+import Videos from './pages/Videos';
+import Promo from './pages/Promo';
+import Products from './pages/Products';
+import NavigationBar from './components/NavigationBar'
+import {
+  BrowserRouter,
+  Routes,
+  Route,
+} from "react-router-dom";
+import Footer from './components/Footer';
 
 function App() {
   return (
-    <div className="app">
-     <h1>Hello from webstore</h1>
-    </div>
+    <BrowserRouter>
+    <NavigationBar />
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/about" element={<About />} />
+      <Route path="/promotion" element={<Promo />} />
+      <Route path="/photos" element={<Photos />} />
+      <Route path="/videos" element={<Videos />} />
+      <Route path="/products" element={<Products />} />
+    </Routes>
+    <Footer />
+  </BrowserRouter>
   );
 }
 
