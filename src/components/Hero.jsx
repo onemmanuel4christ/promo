@@ -46,12 +46,14 @@ const Description = styled.p`
     font-size: 1em;
     line-height: 28px;
     text-align: justify;
+    margin: 0 auto;
 `
 const Hero = () => {
   return (
-    <Main className="py-3 px-2">
-<Container fluid className="px-0" >
-      <Row noGutters className="pt-2 pt-md-5 w-100 px-4 px-xl-0">
+    <Main className="py-3 px-2 px-xs-0">
+<Container className="px-0" >
+      <Row noGutters className="pt-2 pt-md-5 w-100 px-2">
+      {/* <Row noGutters className="pt-2 pt-md-5 w-100 px-4 px-xl-0"> */}
         <Col xs={12} md={5}>
         <Text className='text-left text-white'>Odogwu Bitters Herbal Alcoholic Drink</Text>
         <Description>
@@ -62,7 +64,7 @@ const Hero = () => {
             Ginger and honey helps in fighting inflammation in the body.
             Alot of brand ambassadors which included famous actor Zubby Micheal and music street mover,
             Portable, otherwise known as ZAZU, and actor Alex Okubo, others as MrJollof and Broda Shaggi all 
-            showed massive support for ODOGWU Bitters and were unveiled at the eventOdogwu bitters have 30% alcohol and offer a unique taste ...
+            showed massive support for ODOGWU Bitters and were unveiled at the eventOdogwu bitters have 30% alcohol and offer a unique taste.
         </Description>
         <BuyButton>BUY NOW</BuyButton>
         </Col>
@@ -90,7 +92,6 @@ const Hero = () => {
                 />
 
                 <Carousel.Caption>
-                
                 </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
