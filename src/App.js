@@ -24,7 +24,7 @@ function App() {
       <Route path="/videos" element={<Videos />} />
       <Route path="/products" element={<Products />} />
     </Routes>
-    <Footer />
+    {/* <Footer /> */}
   </BrowserRouter>
   );
 }

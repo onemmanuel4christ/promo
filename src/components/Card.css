@@ -1,5 +1,5 @@
 .card-pic{
-    max-height: 160px;
+    max-height: 180px;
     width: 100%;
     object-fit: cover;
 
@@ -12,12 +12,16 @@
 
 }
 
-.card__body{
-    font-size: 0.8rem;
+.card__info{
+    width: 100%;   
+    font-size: 1rem;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+  overflow: hidden;
 }
 
 .card__btn{
     background-color: #002E25!important;
-    /* outline: none!important; */
     border: 0!important;
 }
