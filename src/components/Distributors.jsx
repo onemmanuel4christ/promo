@@ -4,18 +4,19 @@ import DistributorCard from './DistributorCard'
 import Carousel from 'better-react-carousel'
 
 const Container = styled.div`
-    background-color: #ECECEC;
+    /* background-color: #ECECEC; */
+    background-color: #002E25;
     padding: 20px;
 `
 const Hr = styled.div`
         width: 100px;
         height: 0;
-        border: 2px solid #002E25;
+        border: 2px solid #ECECEC;
         margin: 0 auto;
-        background-color: #002E25; 
+        background-color: #ECECEC; 
 `
 const Title = styled.h1`
-    color: #002E25;
+    color: #ECECEC;
     font-size: 2.5rem;
     font-weight: 800;
     text-transform: capitalize;

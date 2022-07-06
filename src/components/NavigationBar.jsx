@@ -21,7 +21,7 @@ const NavigationBar = () => {
        <Nav.Link href="/promotion"  className='nav-item'>Promo</Nav.Link>
        <Nav.Link href="/photos"  className='nav-item'>Photo Gallery</Nav.Link>
        <Nav.Link href="/videos"  className='nav-item'>Video Gallery</Nav.Link>
-       {/* <a className="shop-now" href="/join" role="button">Join our Distributors</a> */}
+       <a className="shop-now" href="/join" role="button">Buy Now!</a>
        {/* <Badge>2</Badge> */}
         </Nav>
         </Navbar.Collapse>
