@@ -3,7 +3,7 @@ import { Row, Col, Accordion } from 'react-bootstrap'
 import styled from 'styled-components'
 
 const Container = styled.div`
-    height: calc(100vh - 100px);
+    /* height: calc(100vh - 100px); */
     background-color: #002E25; 
     color: #FFF;
     padding: 20px 0;
