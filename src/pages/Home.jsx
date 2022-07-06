@@ -1,5 +1,6 @@
 import styled from "styled-components"
 import Description from "../components/Description"
+import Distributors from "../components/Distributors"
 import Hero from "../components/Hero"
 import SellerSection from "../components/SellerSection"
 
@@ -12,6 +13,7 @@ const Home = () => {
       <Hero />
       <Description />
       <SellerSection />
+      <Distributors />
     </Container>
   )
 }
