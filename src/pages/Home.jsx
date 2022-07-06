@@ -12,8 +12,8 @@ const Home = () => {
     <Container>
       <Hero />
       <Description />
-      <SellerSection />
       <Distributors />
+      <SellerSection />
     </Container>
   )
 }
