@@ -25,7 +25,6 @@ const Title = styled.h1`
 `
 
 const Distributors = () => {
-    const n = 8;
       return (
     <Container>
       <Title>Meet our distributors</Title>

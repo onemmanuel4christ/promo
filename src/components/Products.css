@@ -1,0 +1,11 @@
+.product__img{
+    width: 100%;
+    border-radius: 5px;
+    height: 100%;
+    object-fit: cover;
+}
+
+.product{
+    border-bottom: 5px solid red;
+    padding-bottom: 20px;
+}

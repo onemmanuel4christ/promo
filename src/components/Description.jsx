@@ -1,12 +1,12 @@
 import React from 'react'
 import styled from 'styled-components'
 import Cards from './Cards'
-import { Row, Col } from 'react-bootstrap'
+import { Row, Col, Container } from 'react-bootstrap'
 
 
-const Container = styled.div`
+const Wrapper = styled.div`
     background-color: #ECECEC;
-    padding: 20px;
+    padding: 20px 30px;
 `
 const Hr = styled.div`
         width: 100px;
@@ -26,16 +26,16 @@ const Title = styled.h1`
 
 const Description = () => {
   return (
-    <Container>
+    <Wrapper>
       <Title>Why you need Odogwu Bitters!</Title>
       <Hr />
-      <Row>
-        <Col><Cards /></Col>
-        <Col><Cards /></Col>
-        <Col><Cards /></Col>
-        <Col><Cards /></Col>
-      </Row>
-    </Container>
+        <Row>
+          <Col><Cards /></Col>
+          <Col><Cards /></Col>
+          <Col><Cards /></Col>
+          <Col><Cards /></Col>
+        </Row>
+    </Wrapper>
   )
 }
 

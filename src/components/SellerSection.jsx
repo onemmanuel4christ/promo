@@ -1,5 +1,5 @@
 import React from 'react'
-import { Row, Col, Accordion } from 'react-bootstrap'
+import { Accordion } from 'react-bootstrap'
 import styled from 'styled-components'
 
 const Container = styled.div`
@@ -22,20 +22,6 @@ const Title = styled.h1`
     font-weight: 800;
     text-transform: capitalize;
     text-align: center;
-`
-const Left = styled.div`
-  width: 100%;
-  height: 100%;
-  background-color: #ECECEC;
-  display: flex;
-  align-items: center;
-  color: #002E25;
-  padding: 10px;
-`
-
-const Right = styled.div`
-  width: 100%;
-  height: 100%;
 `
 
 const SellerSection = () => {

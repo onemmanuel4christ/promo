@@ -1,7 +1,7 @@
 import React from 'react'
 import { Container, Row, Col, Carousel } from 'react-bootstrap'
 import styled from 'styled-components'
-
+import { Link } from 'react-router-dom'
 
 const Image = styled.img`
     width: 90%;
@@ -53,7 +53,6 @@ const Hero = () => {
     <Main className="py-3 px-2 px-xs-0">
 <Container className="px-0" >
       <Row noGutters className="pt-2 pt-md-5 w-100 px-2">
-      {/* <Row noGutters className="pt-2 pt-md-5 w-100 px-4 px-xl-0"> */}
         <Col xs={12} md={5}>
         <Text className='text-left text-white'>Odogwu Bitters Herbal Alcoholic Drink</Text>
         <Description>
@@ -66,7 +65,9 @@ const Hero = () => {
             Portable, otherwise known as ZAZU, and actor Alex Okubo, others as MrJollof and Broda Shaggi all 
             showed massive support for ODOGWU Bitters and were unveiled at the eventOdogwu bitters have 30% alcohol and offer a unique taste.
         </Description>
-        <BuyButton>BUY NOW</BuyButton>
+        <Link to="/products">
+            <BuyButton>BUY NOW</BuyButton>
+        </Link>
         </Col>
         <Col xs ={12} md={7}>
         <Carousel
