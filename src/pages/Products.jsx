@@ -93,12 +93,12 @@ const Products = () => {
                   <option style={{width: '70%'}} value="1">200ml </option>
                   <option style={{width: '70%'}} value="1">1000ml</option>
                 </Size>
-                  <input type="number" placeholder="Write Qty" />
                 <Quantity>
                   <option value="1">Type</option>
                   <option value="1">Bottle </option>
                   <option value="1">Cartons</option>
                 </Quantity>
+                <input type="number" placeholder="Write Qty" />
               </QtyHolder>
               <Price>Total Price: ₦7,000 : 00</Price>
               <CartBtn>Add to Cart</CartBtn>

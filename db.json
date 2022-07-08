@@ -1,0 +1,28 @@
+{
+  "benefits": [
+    {
+      "id": 1,
+      "img_url": "./images/energy.webp",
+      "title": "Enery Booster",
+      "description": "Odogwu Bitters is a Herbal Alcoholic Drink that contains an Ancient Herbal Mix that also includes Honey and Ginger. This Recipe has been trusted and proven to guarantee a fast and efficient result in the body. Markets are flooded with products and supplements that claim to boost your energy levels. There is, however, not enough scientific evidence to support that any of the marketed “energy boosters” are needed to energize you."
+    },
+    {
+      "id": 2,
+      "img_url": "./images/libido.jfif",
+      "title": "Increase Libido",
+      "description": "Odogwu Bitters is an Energy booster that helps in increasing the Libido and provides antioxidants that aid the digestive system of the body and can also help the body fight flu and the common cold, Odogwu Bitters aids in boosting the immune system and may also help in the relief of stress and regulation of blood sugar level and promotion of weight loss"
+    },
+    {
+      "id": 3,
+      "img_url": "./images/body.jpg",
+      "title": "Cleanse Body System",
+      "description": "Odogwu Bitters is an energy booster which helps in increasing libido and provides antioxidant that aids the digestive system of the body and can also fight flu and common cold."
+    },
+    {
+      "id": 4,
+      "img_url": "./images/sugar.jfif",
+      "title": "Regulate blood sugar",
+      "description": "Odogwu bitters aids in boosting the immune system and may also help in the relief of stress and regulation of the body sugar level and Promotion of body weight lossOdogwu bitters aids in boosting the immune system and may also help in the relief of stress and regulation of the body sugar level and Promotion of body weight loss"
+    }
+  ]
+}

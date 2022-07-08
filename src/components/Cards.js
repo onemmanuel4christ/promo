@@ -1,19 +1,42 @@
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import './Card.css'
+import { useState, useEffect } from 'react'
+import axios from 'axios';
+
 function Cards() {
+  const [data, setData ] = useState([])
+  const [loading, setLoading ] = useState(false)
+
+  const fetchdata = async() =>{
+    setLoading(true)
+    await axios.get('http://localhost:3500/benefits').then((response) => {
+      setData(response.data);
+      setLoading(false)
+      console.log(data)
+    });
+  }
+
+  useEffect(() => {
+    fetchdata()
+ }, []);
+
   return (
-    <Card style={{ width: '18rem', margin: "20px 0px" }}>
-      <Card.Img variant="top" src="https://www.ideasthatwork.com.au/wp-content/uploads/2016/04/healthy-bodies.jpg" className="card-pic" />
-      <Card.Body className='card__body'>
-        <Card.Title className='h3 mb-2 pt-2 font-weight-bold'>Balance appetite</Card.Title>
-        <Card.Text className="card__text mb-3 font-weight-light card__info">
-          Odogwu bitters is a herbal drink which contain Ancient herbal mixture which also contains Honey and ginger. 
-          This recipe has been trusted and proven to guarantee a fast and efficient result in the body
-        </Card.Text>
-        <Button className='card__btn'>Read More...</Button>
-      </Card.Body>
-    </Card>
+  <Card style={{ width: '18rem', margin: "20px 0px" }} >
+   {data.map((item, idx) =>(
+    <>
+    <Card.Img variant="top" src={item.img_url} className="card-pic" key={item.id} />
+    <Card.Body className='card__body'>
+      <Card.Title className='h3 mb-2 pt-2 font-weight-bold'>{item.title}</Card.Title>
+      <Card.Text className="card__text mb-3 font-weight-light card__info">
+      {item.description}
+      </Card.Text>
+      <Button className='card__btn'>Read More...</Button>
+    </Card.Body>
+  </>
+   ))}
+  </Card>
+
   );
 }
 

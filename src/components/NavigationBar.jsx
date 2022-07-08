@@ -13,12 +13,12 @@ const CartHolder = styled.div`
   justify-content: center;
 `
 const Span = styled.span`
-  width: 20px;
-  height: 20px;
+  width: 15px;
+  height: 15px;
   border-radius: 50%;
   position: absolute;
   top: 0;
-  right: -5px;
+  right: -10px;
   font-size: 10px;
   background-color: red;
   color: #FFF;

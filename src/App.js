@@ -11,6 +11,7 @@ import {
   Route,
 } from "react-router-dom";
 import Footer from './components/Footer';
+import Checkout from './pages/Checkout';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
       <Route path="/photos" element={<Photos />} />
       <Route path="/videos" element={<Videos />} />
       <Route path="/products" element={<Products />} />
+      <Route path="/checkout" element={<Checkout />} />
     </Routes>
     <Footer />
   </BrowserRouter>
