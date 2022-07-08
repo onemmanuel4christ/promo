@@ -38,25 +38,34 @@ const NavigationBar = () => {
        <Navbar.Brand href="/" >
            <img src="./images/logo2.jfif" alt="" className='logo' />
        </Navbar.Brand>
-
-       <Navbar.Toggle aria-controls="basic-navbar-nav " />
-       
-       <Navbar.Collapse id="basic-navbar-nav"  className="justify-content-end">
-       <Nav >
-       <Nav.Link href="/" className='nav-item'>Home</Nav.Link>
-       <Nav.Link href="/about"  className='nav-item'>About Us</Nav.Link>
-       <Nav.Link href="/promotion"  className='nav-item'>Promo</Nav.Link>
-       <Nav.Link href="/photos"  className='nav-item'>Photo Gallery</Nav.Link>
-       <Nav.Link href="/videos"  className='nav-item'>Video Gallery</Nav.Link>
-       <a className="shop-now" href="/products" role="button">Buy Now!</a>
-      
-          <Link to="/checkout">
+       <Link to="/checkout">
                   <CartHolder>
                    <FaCartArrowDown className='cart__basket'/>
                       <Span>{basket?.length}</Span>
                   </CartHolder>
                 </Link>
-        </Nav>
+       <Navbar.Toggle aria-controls="basic-navbar-nav " />
+        <Navbar.Collapse id="basic-navbar-nav"  className="justify-content-end">
+          <Nav >
+          <Link to="/" className='link'>
+              <span className='nav-item'>Home</span>
+          </Link>
+          <Link to="/about" className='link'>
+              <span className='nav-item'>About Us</span>
+          </Link>
+          <Link to="/promotion" className='link'>
+              <span className='nav-item'>Promo</span>
+          </Link>
+          <Link to="/photos" className='link'>
+              <span className='nav-item'>Photo Gallery</span>
+          </Link>
+          <Link to="/videos" className='link'>
+              <span className='nav-item'>Video Gallery</span>
+          </Link>
+            <Link to="/collections" className='link'>
+              <button className="btn btn-primary">Buy Now!</button>      
+            </Link>
+          </Nav>
       </Navbar.Collapse>
   </Container>
 </Navbar>  

@@ -35,8 +35,21 @@ code {
 }
 .nav-item {
   color: #002E25 !important;
+  padding: 5px 10px;
+  margin: 0 10px;
+  border-radius: 5px;
+}
+.nav-item:hover{
+  background-color: #002E25;
+  color: #fff!important;
 }
 
 .acc__body{
   color: #002E25!important;
+}
+.link{
+  text-decoration: none;
+  color: inherit;
+  margin: 10px 0;
+
 }
