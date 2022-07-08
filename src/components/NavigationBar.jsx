@@ -3,6 +3,7 @@ import { Navbar, Nav, Container, Badge } from 'react-bootstrap'
 import { FaCartArrowDown } from "react-icons/fa";
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
+import { useStateValue } from '../context/StateProvider';
 import './Nav.css'
 
 const CartHolder = styled.div`
@@ -29,6 +30,7 @@ const Span = styled.span`
 
 
 const NavigationBar = () => {
+  const [{basket}, dispatch] = useStateValue()
   return (
   
     <Navbar expand="lg" className='color-nav' variant='light'  >
@@ -51,7 +53,7 @@ const NavigationBar = () => {
           <Link to="/checkout">
                   <CartHolder>
                    <FaCartArrowDown className='cart__basket'/>
-                      <Span>2</Span>
+                      <Span>{basket?.length}</Span>
                   </CartHolder>
                 </Link>
         </Nav>

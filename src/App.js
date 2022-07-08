@@ -3,7 +3,7 @@ import About from './pages/About';
 import Photos from './pages/Photos';
 import Videos from './pages/Videos';
 import Promo from './pages/Promo';
-import Products from './pages/Products';
+import Products from './components/Products';
 import NavigationBar from './components/NavigationBar'
 import {
   BrowserRouter,
@@ -12,6 +12,7 @@ import {
 } from "react-router-dom";
 import Footer from './components/Footer';
 import Checkout from './pages/Checkout';
+import Collection from './pages/Collection';
 
 function App() {
   return (
@@ -23,7 +24,7 @@ function App() {
       <Route path="/promotion" element={<Promo />} />
       <Route path="/photos" element={<Photos />} />
       <Route path="/videos" element={<Videos />} />
-      <Route path="/products" element={<Products />} />
+      <Route path="/collections" element={<Collection />} />
       <Route path="/checkout" element={<Checkout />} />
     </Routes>
     <Footer />
